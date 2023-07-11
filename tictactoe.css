@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 80px;
+    color: orange;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgb(64, 67, 64);
+}
+
+#reset{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    color: blue;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#reset:hover{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: red;
+    box-shadow: 0 0 100px 10px rgb(245, 244, 244);
+    transition: 0.5s ease-in-out;
+}
+
+#gameBoard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    border-right: 3px solid green;
+    border-bottom: 3px solid green;
+    font-size: 60px;
+
+}
+
+.box:nth-child(3n){
+    border-right: none;
+}
+
+.box:nth-child(n+7){
+    border-bottom: none;
+}
+
+#result{
+    font-size: 30px;
+    color: green;
+}
